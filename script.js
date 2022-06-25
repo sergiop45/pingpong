@@ -13,6 +13,7 @@ let dybola = 1;
 let msg = document.querySelector("#msg");
 let placar1 = document.querySelector("#placar1");
 let placar2 = document.querySelector("#placar2");
+let start = document.querySelector("#start");
 let pontos1 =  0;
 let pontos2 = 0;
 let anima,code,key;
@@ -52,6 +53,7 @@ document.body.addEventListener('keydown', function (event) {
   
     if( code == 32) {
         dybola = velocidade;
+        start.innerHTML = "";
     }
 
     
@@ -115,6 +117,7 @@ document.body.addEventListener('keydown', function (event) {
     if(pybola > 393) {
         pontos1++;
         placar1.innerHTML = "Player 1 - "+ pontos1;
+        start.innerHTML = "Pressione Espaço";
         pxbola = 200;
         pybola = 200;
         dxbola = 0;
@@ -122,6 +125,7 @@ document.body.addEventListener('keydown', function (event) {
     }
     if(pybola < 7) {
         pontos2++;
+        start.innerHTML = "Pressione Espaço";
         placar2.innerHTML = "Player 2 - "+ pontos2;
         pxbola = 200;
         pybola = 200;
