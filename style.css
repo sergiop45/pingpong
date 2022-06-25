@@ -1,0 +1,47 @@
+*  {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: radial-gradient(circle at 87.5% 12.5%, 
+										#b1a6ee 0,
+										#898be3 25%,
+										#5570d8 50%, 
+										#0058cd 75%, 
+										#0045c3 100%);
+	display: flex;
+	justify-content: space-around;
+	height: 100vh;
+	align-items: center;
+	padding: 30px;
+}
+
+
+#canvas1 {
+	background-color: black;
+	margin: 10px;
+	border: 1px solid gold;
+}
+
+#jogo {
+	text-align: center;
+}
+
+#velocidade {
+	font-size: 12px;
+	margin-right: 320px;
+}
+
+#info {
+	text-align: center;
+}
+
+#controles {
+	display: flex;
+}
+#controles div {
+	text-align: start;
+	margin: 10px 25px;
+}
